@@ -18,8 +18,9 @@ ActiveRecord::Schema.define(version: 20170410084338) do
   create_table "assignments", force: :cascade do |t|
     t.bigint "roster_id", null: false
     t.bigint "person_id", null: false
-    t.date "from_date", null: false
-    t.date "to_date"
+    t.integer "year", null: false
+    t.integer "week_number"
+    t.integer "month_number"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["person_id"], name: "index_assignments_on_person_id"

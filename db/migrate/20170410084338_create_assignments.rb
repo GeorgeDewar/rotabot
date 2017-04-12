@@ -4,8 +4,9 @@ class CreateAssignments < ActiveRecord::Migration[5.1]
       t.references :roster, null: false
       t.references :person, null: false
 
-      t.date :from_date, null: false
-      t.date :to_date # if null, the assignment is permanent
+      t.integer :year, null: false
+      t.integer :week_number
+      t.integer :month_number
 
       t.timestamps
     end
