@@ -1,0 +1,5 @@
+<h1><%= @roster.name %></h1>
+
+<% @assignments.each do |assignment| %>
+  <p><%= assignment.year %> W<%= assignment.week_number %>: <%= assignment.person.full_name %></p>
+<% end %>
