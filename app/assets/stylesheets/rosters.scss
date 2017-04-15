@@ -1,3 +1,19 @@
-// Place all the styles related to the rosters controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.roster-row {
+  .period, .slot {
+    padding: 3px;
+    border: 1px solid;
+    display: inline-block;
+  }
+  .period {
+    width: 150px;
+  }
+  .slot {
+    width: 200px;
+    text-align: center;
+  }
+}
+.roster-row:nth-child(even) {
+  .slot {
+    background: lightblue;
+  }
+}
